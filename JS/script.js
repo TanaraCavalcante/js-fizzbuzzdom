@@ -16,5 +16,10 @@ for( let i = 1; i <= 100; i++){
     const listItem = document.createElement('li');
     listItem.append(i);
     list.appendChild(listItem);
+
+    if((i / 3) % 0 ){
+        listItem.appendi('Fizz')
+        listItem.classList.add('.fizz')
+    }
 }
   setField.appendChild(list);

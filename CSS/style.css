@@ -16,3 +16,8 @@ li{
     padding: 25px;
     background-color: #3D88AE;
 }
+
+.fizz{
+    background-color: #61D2A4;
+    font-weight: 600;
+}
