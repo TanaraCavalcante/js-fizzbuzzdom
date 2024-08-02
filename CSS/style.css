@@ -19,5 +19,18 @@ li{
 
 .fizz{
     background-color: #61D2A4;
-    font-weight: 600;
+    font-weight: bolder;
+    color: black;
+}
+
+.buzz{
+    background-color:#FFD166;
+    font-weight: bolder;
+    color: black;
+}
+
+.fizzbuzz{
+    background-color: #F0466F;
+    font-weight: bolder;
+    color: black;
 }

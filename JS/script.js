@@ -17,9 +17,12 @@ for( let i = 1; i <= 100; i++){
     listItem.append(i);
     list.appendChild(listItem);
 
-    if((i / 3) % 0 ){
-        listItem.appendi('Fizz')
-        listItem.classList.add('.fizz')
+    if(i % 3 == 0){
+        listItem.append('Fizz')
+        listItem.classList.add('fizz')
+    }else if (i % 5 == 0){
+        listItem.append('Buzz')
+        listItem.classList.add('buzz')
     }
 }
   setField.appendChild(list);
