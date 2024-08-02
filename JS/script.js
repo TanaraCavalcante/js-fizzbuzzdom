@@ -6,8 +6,15 @@
 //definir os multiplos de 3 e 5 coincidentes
 
 //TODO  Recuperare gli elementi del DOM
-const setField = document.getElementById('set')
+const setField = document.getElementById('set');
 
 
 //TODO Creare una lista
+const list = document.createElement('ul');
 
+for( let i = 1; i <= 100; i++){
+    const listItem = document.createElement('li');
+    listItem.append(i);
+    list.appendChild(listItem);
+}
+  setField.appendChild(list);
