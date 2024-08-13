@@ -13,8 +13,10 @@ ul{
 li{
     height: 100px;
     width: 100px;
-    padding: 25px;
     background-color: #3D88AE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .fizz{

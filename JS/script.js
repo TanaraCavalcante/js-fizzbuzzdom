@@ -18,11 +18,11 @@ for( let i = 1; i <= 100; i++){
     list.appendChild(listItem);
 
     if(i % 3 == 0){
-        listItem.append('Fizz')
-        listItem.classList.add('fizz')
+        listItem.append('Fizz');
+        listItem.classList.add('fizz');
     }else if (i % 5 == 0){
-        listItem.append('Buzz')
-        listItem.classList.add('buzz')
-    }
+        listItem.append('Buzz');
+        listItem.classList.add('buzz');
+    }else 
 }
   setField.appendChild(list);
