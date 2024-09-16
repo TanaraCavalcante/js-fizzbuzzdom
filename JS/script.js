@@ -10,10 +10,10 @@ const list = document.getElementById('numbers-list');
 
 
 //TODO Creare una lista
-let items = '';
+let items = ''; //variavel de apoio para montar resultado final
 
 for( let i = 1; i <= 100; i++){
-   let content = i;
+   let content = i;  //variavel de apoio do if
    
     if( i % 3 === 0 && i % 15 === 0){
        content = 'fizzbuzz'
@@ -26,7 +26,8 @@ for( let i = 1; i <= 100; i++){
        console.log(content)
     }
 
-    items += `<li class="${content}">${content}</li> `
+    items += `<li class="${content}">${content}</li> ` //o resultado tem que ser montado dentro do for
 }
-   
+
+//TODO Mostrare in pagina
    list.innerHTML = items;
