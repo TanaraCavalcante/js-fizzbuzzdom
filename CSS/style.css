@@ -8,6 +8,7 @@ ul{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    margin: 0 auto;
 }
 
 li{
@@ -17,22 +18,21 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: black;
 }
 
 .fizz{
     background-color: #61D2A4;
     font-weight: bolder;
-    color: black;
+    
 }
 
 .buzz{
     background-color:#FFD166;
     font-weight: bolder;
-    color: black;
-}
+}   
 
 .fizzbuzz{
     background-color: #F0466F;
-    font-weight: bolder;
-    color: black;
+    font-weight: bolder;    
 }

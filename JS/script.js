@@ -6,23 +6,27 @@
 //definir os multiplos de 3 e 5 coincidentes
 
 //TODO  Recuperare gli elementi del DOM
-const setField = document.getElementById('set');
+const list = document.getElementById('numbers-list');
 
 
 //TODO Creare una lista
-const list = document.createElement('ul');
+let items = '';
 
 for( let i = 1; i <= 100; i++){
-    const listItem = document.createElement('li');
-    listItem.append(i);
-    list.appendChild(listItem);
+   let content = i;
+   
+    if( i % 3 === 0 && i % 15 === 0){
+       content = 'fizzbuzz'
+       console.log(content)
+    }else if (i % 5 === 0){
+       content = 'buzz' 
+       console.log(content)
+    }else if ( i % 3 === 0){
+       content = 'fizz'
+       console.log(content)
+    }
 
-    if(i % 3 == 0){
-        listItem.append('Fizz');
-        listItem.classList.add('fizz');
-    }else if (i % 5 == 0){
-        listItem.append('Buzz');
-        listItem.classList.add('buzz');
-    }else 
+    items += `<li class="${content}">${content}</li> `
 }
-  setField.appendChild(list);
+   
+   list.innerHTML = items;
