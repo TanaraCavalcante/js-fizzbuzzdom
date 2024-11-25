@@ -19,20 +19,17 @@ li{
     justify-content: center;
     align-items: center;
     color: black;
+    text-transform: capitalize;
 }
 
 .fizz{
     background-color: #61D2A4;
-    font-weight: bolder;
-    
 }
 
 .buzz{
     background-color:#FFD166;
-    font-weight: bolder;
 }   
 
 .fizzbuzz{
-    background-color: #F0466F;
-    font-weight: bolder;    
+    background-color: #F0466F; 
 }

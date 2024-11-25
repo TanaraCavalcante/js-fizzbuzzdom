@@ -15,17 +15,17 @@ let items = ''; //variavel de apoio para montar resultado final
 for( let i = 1; i <= 100; i++){
    let content = i;  //variavel de apoio do if
    
-    if( i % 3 === 0 && i % 15 === 0){
+    if( i % 3 === 0 && i % 5 === 0){
        content = 'fizzbuzz'
-       console.log(content)
+       
     }else if (i % 5 === 0){
        content = 'buzz' 
-       console.log(content)
+       
     }else if ( i % 3 === 0){
-       content = 'fizz'
-       console.log(content)
+       content = 'fizz'      
     }
-
+    
+    console.log(content);
     items += `<li class="${content}">${content}</li> ` //o resultado tem que ser montado dentro do for
 }
 
